@@ -1,13 +1,17 @@
-name: rise-environment
+name: phys350-2020
 channels:
-  - damianavila82
   - conda-forge
+  - defaults
+  - vpython
 dependencies:
-  - python
   - numpy
-  - matplotlib
   - scipy
-  - astropy
+  - notebook
   - pandas
-  - bokeh
+  - astropy
+  - matplotlib
+  - seaborn
+  - spyder
   - rise
+  - vpython
+  - bokeh
