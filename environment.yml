@@ -14,5 +14,6 @@ dependencies:
   - spyder
   - vpython
   - bokeh
+  - pip
   - pip:
     - rise
