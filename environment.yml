@@ -2,18 +2,12 @@ name: phys350-2020
 channels:
   - conda-forge
   - defaults
-  - vpython
 dependencies:
   - numpy
   - scipy
-  - notebook
   - pandas
   - astropy
   - matplotlib
   - seaborn
-  - spyder
-  - vpython
   - bokeh
-  - pip
-  - pip:
-    - rise
+  - rise
