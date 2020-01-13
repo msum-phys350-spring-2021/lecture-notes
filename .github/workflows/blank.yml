@@ -9,9 +9,14 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - name: Run a one-line script
-      run: echo Hello, world!
-    - name: Run a multi-line script
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v1
+      with:
+        python-version: 3.7
+    - name: Install dependencies
       run: |
-        echo Add other actions to build,
-        echo test, and deploy your project.
+        python -m pip install --upgrade pip
+        pip install notebook nbconvert
+    - name: Execute notebook
+      run: |
+        jupyter nbconvert --to html notebooks/Hour01_Python_Basics.ipynb
