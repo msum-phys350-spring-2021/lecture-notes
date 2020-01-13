@@ -19,4 +19,4 @@ jobs:
         pip install notebook nbconvert
     - name: Execute notebook
       run: |
-        jupyter nbconvert --to html notebooks/Hour01_Python_Basics.ipynb
+        jupyter nbconvert --execute --to html notebooks/Hour01_Python_Basics.ipynb
