@@ -12,6 +12,7 @@ dependencies:
   - matplotlib
   - seaborn
   - spyder
-  - rise
   - vpython
   - bokeh
+  pip:
+    - rise
