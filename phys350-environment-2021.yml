@@ -1,0 +1,18 @@
+name: phys350-2021
+channels:
+  - conda-forge
+  - defaults
+  - vpython
+dependencies:
+  - numpy
+  - scipy
+  - notebook
+  - pandas
+  - astropy
+  - matplotlib
+  - seaborn
+  - spyder
+  - rise
+  - vpython
+  - bokeh
+  - jupyterlab
